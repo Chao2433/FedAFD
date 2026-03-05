@@ -37,10 +37,11 @@ Install `apex` by following the instructions from https://github.com/NVIDIA/apex
 ## Usage
 
 ```
-cd FedAFD
+cd fedafd
 nohup python src/fedafd.py --name 1_iid_fedafd --partition homo --server_lr 1e-5 --BAA --agg_method SED &
 ```
 
 ##  Acknowledgement
+
 
 The implementation of this repository is based on the open-source project [CreamFL](https://github.com/FLAIR-THU/CreamFL).
