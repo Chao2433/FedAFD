@@ -1,6 +1,7 @@
 # FedAFD
 Datasets
 For datasets, please download the MSCOCO, Flicker30K, CIFAR-100, and AG_NEWS datasets, and arrange their directories as follows:
+```text
 'FedAFD/data/'
 ├── AG_NEWS
 │   ├── train.csv
