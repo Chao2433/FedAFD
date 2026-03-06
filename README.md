@@ -14,6 +14,12 @@ pip install -r requirements.txt
 ```
 
 Install `apex` by following the instructions from https://github.com/NVIDIA/apex#installation, instead of directly running `pip install apex`.
+```
+git clone https://github.com/NVIDIA/apex
+cd apex
+# Build with core extensions (cpp and cuda)
+APEX_CPP_EXT=1 APEX_CUDA_EXT=1 pip install -v --no-build-isolation .
+```
 
 ## Datasets Structure
 
@@ -46,4 +52,5 @@ nohup python src/fedafd.py --name 1_iid_fedafd --partition homo --server_lr 1e-5
 
 
 The implementation of this repository is based on the open-source project [CreamFL](https://github.com/FLAIR-THU/CreamFL).
+
 
