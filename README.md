@@ -9,6 +9,7 @@ This repository is PyTorch implementation of the paper FedAFD: Multimodal Federa
 ```
 conda create -n fedafd python=3.6
 conda activate fedafd
+cd FedAFD
 pip install -r requirements.txt
 ```
 
@@ -37,7 +38,7 @@ Install `apex` by following the instructions from https://github.com/NVIDIA/apex
 ## Usage
 
 ```
-cd fedafd
+cd FedAFD
 nohup python src/fedafd.py --name 1_iid_fedafd --partition homo --server_lr 1e-5 --BAA --agg_method SED &
 ```
 
@@ -45,3 +46,4 @@ nohup python src/fedafd.py --name 1_iid_fedafd --partition homo --server_lr 1e-5
 
 
 The implementation of this repository is based on the open-source project [CreamFL](https://github.com/FLAIR-THU/CreamFL).
+
