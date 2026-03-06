@@ -7,7 +7,7 @@ This repository is PyTorch implementation of the paper FedAFD: Multimodal Federa
 ## Requirements
 
 ```
-conda create -n fedafd python=3.6
+conda create -n fedafd python=3.7
 conda activate fedafd
 cd FedAFD
 pip install -r requirements.txt
@@ -52,5 +52,6 @@ nohup python src/fedafd.py --name 1_iid_fedafd --partition homo --server_lr 1e-5
 
 
 The implementation of this repository is based on the open-source project [CreamFL](https://github.com/FLAIR-THU/CreamFL).
+
 
 
