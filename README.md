@@ -22,9 +22,10 @@ cd ..
 
 ```text
 'FedAFD/data/'
-├── AG_NEWS
-│   ├── train.csv
-│   └── test.csv
+├── datasets
+│   └── AG_NEWS
+│       ├── train.csv
+│       └── test.csv
 ├── cifar100
 │   └── cifar-100-python
 ├── flickr30k
@@ -58,5 +59,6 @@ nohup python src/local.py --name 1_noniid_local --partition hetero --server_lr 1
 ##  Acknowledgement
 
 The implementation of this repository is based on the open-source project [CreamFL](https://github.com/FLAIR-THU/CreamFL).
+
 
 
