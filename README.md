@@ -42,9 +42,14 @@ cd ..
 
 ```
 cd FedAFD
+# iid fedafd
 nohup python src/fedafd.py --name 1_iid_fedafd --partition homo --server_lr 1e-5 --BAA --agg_method SED &
+
+# non-iid fedafd
+nohup python src/fedafd.py --name 1_noniid_fedafd --partition hetero --server_lr 1e-5 --BAA --agg_method SED &
 ```
 
 ##  Acknowledgement
 
 The implementation of this repository is based on the open-source project [CreamFL](https://github.com/FLAIR-THU/CreamFL).
+
