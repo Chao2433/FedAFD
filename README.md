@@ -5,7 +5,18 @@ This repository is PyTorch implementation of the paper FedAFD: Multimodal Federa
 ![alt text](./assets/FedAFD.png)
 
 ## Requirements
-"requirements.txt file will coming soon."
+
+```
+conda create -n fedafd python=3.8
+conda activate fedafd
+cd FedAFD
+pip install -r requirements.txt
+# Install `apex` 
+conda install -c nvidia cuda-toolkit=11.7
+cd ./apex
+pip install -v --disable-pip-version-check --no-cache-dir --no-build-isolation --global-option="--cpp_ext" --global-option="--cuda_ext" ./
+cd ..
+```
 
 ## Datasets Structure
 
@@ -36,9 +47,4 @@ nohup python src/fedafd.py --name 1_iid_fedafd --partition homo --server_lr 1e-5
 
 ##  Acknowledgement
 
-
 The implementation of this repository is based on the open-source project [CreamFL](https://github.com/FLAIR-THU/CreamFL).
-
-
-
-
