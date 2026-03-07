@@ -47,9 +47,16 @@ nohup python src/fedafd.py --name 1_iid_fedafd --partition homo --server_lr 1e-5
 
 # non-iid fedafd
 nohup python src/fedafd.py --name 1_noniid_fedafd --partition hetero --server_lr 1e-5 --BAA --agg_method SED &
+
+# iid local
+nohup python src/local.py --name 1_iid_local --partition homo --server_lr 1e-5 &
+
+# non-iid local
+nohup python src/local.py --name 1_noniid_local --partition hetero --server_lr 1e-5 &
 ```
 
 ##  Acknowledgement
 
 The implementation of this repository is based on the open-source project [CreamFL](https://github.com/FLAIR-THU/CreamFL).
+
 
