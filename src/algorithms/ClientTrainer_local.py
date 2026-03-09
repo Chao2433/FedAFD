@@ -30,12 +30,6 @@ import random
 import torch
 import torch.multiprocessing
 
-from pytorch_grad_cam import GradCAM
-from pytorch_grad_cam.utils.image import show_cam_on_image, preprocess_image
-from pytorch_grad_cam.utils.model_targets import ClassifierOutputTarget
-import uuid
-import cv2
-
 torch.multiprocessing.set_sharing_strategy('file_system')
 
 
@@ -486,4 +480,5 @@ class ClientTrainer:
     def __getattr__(self, k):
         if k.startswith("__"):
             raise AttributeError
+
 
